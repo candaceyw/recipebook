@@ -1,7 +1,19 @@
-{>"layout" /} {<body}
+{>"layout" /} 
+{<body}
  {#recipes} 
     <div class="well">
-        <h4>{name} <button class="btn btn-default pull-right"> View</button></h4>
-    </body>
-{/recipes}
+        <h4>{name}
+         <button class="btn btn-default pull-right"
+         data-toggle="collapse" href="#recipe_{id}" aria-expanded="false
+          aria-controls="recipe_{id}"> 
+          VIEW
+            <!-- <span class="glyphicon glyphic-triangle-bottom" aria-hidden="true"></span> -->
+        </button>
+        </h4>
+
+        <div class="collapse" id="recipe_{id}">
+         TEST
+        </div>    
+    </div>
+    {/recipes}
  {/body}
